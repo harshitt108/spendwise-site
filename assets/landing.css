@@ -188,7 +188,7 @@ h1, h2, h3 {
    are a different aspect ratio than the raw screenshots. */
 .showcase { margin: 52px auto 0; max-width: 1000px; }
 
-.hero-art { width: 100%; }
+.hero-art { width: 100%; height: auto; }
 
 /* ---------------------------------------------------------------- sections */
 
@@ -235,7 +235,7 @@ h1, h2, h3 {
 .feature-card p { margin: 7px 0 0; color: var(--text-body); font-size: 14px; line-height: 1.55; }
 
 .split-visual { display: grid; place-items: center; }
-.split-visual img { width: 100%; max-width: 330px; }
+.split-visual img { width: 100%; height: auto; max-width: 330px; }
 
 /* ---------------------------------------------------------------- cta band */
 
