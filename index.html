@@ -3,783 +3,370 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>document.documentElement.classList.add('js')</script>
-<title>SpendWise – Free Expense Tracker App for Android</title>
-<meta name="description" content="Track expenses in seconds and see where your money goes with SpendWise, a free, judgment-free expense tracker app for Android. No account needed to start.">
 <meta name="color-scheme" content="light">
+<title>SpendWise — Track Every Penny, Spend Wisely</title>
+<meta name="description" content="SpendWise helps you understand where your money goes with effortless expense tracking, smart budgets, and insights that keep you in control — without guilt, jargon, or shame.">
 <link rel="icon" href="./assets/favicon.png">
 <link rel="stylesheet" href="./assets/landing.css">
-
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="SpendWise">
-<meta property="og:title" content="SpendWise – Free Expense Tracker App for Android">
-<meta property="og:description" content="Log expenses in seconds, see visual spending reports, and stay on track without the guilt trip. Free on Android, no account required.">
-<meta property="og:image" content="./assets/screenshot-home.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="SpendWise – Free Expense Tracker App for Android">
-<meta name="twitter:description" content="Log expenses in seconds, see visual spending reports, and stay on track without the guilt trip. Free on Android, no account required.">
-<meta name="twitter:image" content="./assets/screenshot-home.png">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MobileApplication",
-  "name": "SpendWise",
-  "applicationCategory": "FinanceApplication",
-  "operatingSystem": "Android",
-  "description": "SpendWise is a free expense tracker app guided by Penny, a friendly mascot. Log expenses in seconds, see visual spending reports, and get gentle nudges instead of shame-based alerts.",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Is SpendWise free to use?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Adding expenses, your dashboard, basic reports and insights, default categories, and cloud backup are free for everyone. Pro adds custom categories, CSV/PDF export, and deeper insights."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need to create an account to track expenses?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. SpendWise is fully usable as a guest with zero sign-up. Create an account later only if you want your expenses backed up to the cloud and synced across devices."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is my financial data safe and private?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Your expenses live on your device first. If you sign in, backups are protected per-account on our backend — your data is never sold or shared with third parties."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is SpendWise available on iOS?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "SpendWise is available on Android today. iOS is coming soon — check back here for the App Store link."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which currencies does SpendWise support?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "SpendWise supports 50+ currencies from around the world — from the Indian Rupee and US Dollar to the Euro, British Pound, and currencies across the Middle East, Asia Pacific, and Africa. Pick yours during setup and amounts are stored precisely down to the smallest unit, so your totals are always exact."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How is SpendWise different from other expense tracking apps?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most expense tracking apps go straight to red alerts and shame you for overspending. SpendWise, guided by Penny the mascot, keeps nudges warm and encouraging, logs expenses in a few taps, and never forces you to sign up before you've decided if you like it."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does SpendWise sync across multiple devices?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Sign in with email or Google and your expenses back up automatically — free for every account, not just Pro — so they're there when you open the app on another device."
-      }
-    }
-  ]
-}
-</script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<nav class="nav">
-  <div class="wrap">
-    <a class="nav-brand" href="#top">
-      <img src="./assets/penny-waving.png" alt="">
-      <span>SpendWise</span>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="./">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg>
+      </span>
+      SpendWise
     </a>
-    <div class="nav-links">
+    <nav class="site-nav">
       <a href="#features">Features</a>
-      <a href="#problem">Why SpendWise</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#faq">FAQ</a>
-    </div>
-    <a class="btn btn-primary" href="#download">Get the app</a>
-  </div>
-</nav>
-
-<header class="hero" id="top">
-  <div class="wrap">
-    <div class="hero-order-1">
-      <span class="eyebrow">Free expense tracker app · Works offline · No shame</span>
-      <h1>Track spending<br>without the <em>guilt trip</em>.</h1>
-      <p class="lead">SpendWise is a free expense tracker app guided by Penny — log an expense in seconds, see exactly where your money goes, and get gentle nudges instead of scary red numbers.</p>
-      <div class="hero-ctas" id="download">
-        <a class="btn btn-primary" href="#" aria-disabled="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-          <span class="btn-lines"><small>Download free</small><b>Get it for Android</b></span>
-        </a>
-        <span class="btn btn-disabled">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.702z"/></svg>
-          <span class="btn-lines"><small>Coming soon</small><b>iOS App Store</b></span>
-        </span>
-      </div>
-      <div class="hero-trust">
-        <div class="stat"><b>₹0</b><span>Core features, free forever</span></div>
-        <div class="stat"><b>50+</b><span>Currencies supported worldwide</span></div>
-        <div class="stat"><b>6 sec</b><span>To log an expense</span></div>
-      </div>
-    </div>
-    <div>
-      <div class="phone-frame">
-        <img src="./assets/screenshot-home.png" alt="SpendWise expense tracker app dashboard showing monthly budget and recent expenses on Android">
-        <div class="phone-badge">
-          <img src="./assets/penny-celebrating.png" alt="">
-          <div>
-            <b>Budget on track</b>
-            <span>Penny's cheering you on</span>
-          </div>
-        </div>
-      </div>
-    </div>
+      <a href="#advantages">Advantages</a>
+      <a href="#blog">Blog</a>
+      <a href="mailto:startspendwise@gmail.com">Contact</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="#download">Download App</a>
   </div>
 </header>
 
-<section id="problem">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Why SpendWise</span>
-      <h2>Why SpendWise actually sticks.</h2>
-      <p>Six reasons people keep this one instead of deleting it after a week.</p>
-    </div>
-    <div class="why-grid reveal-group">
-      <div class="why-card">
-        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
-        <h3>Track expenses in seconds</h3>
-        <p>Quick-add flows so logging never feels like a chore.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" y1="20" x2="6" y2="16"/><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/></svg></div>
-        <h3>Understand your spending</h3>
-        <p>Clear category breakdowns show where your money actually goes.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div>
-        <h3>Stay on budget without guilt</h3>
-        <p>Penny guides you, never shames you.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
-        <h3>Keep your data private</h3>
-        <p>Local-first. Your finances stay on your device.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 9c0-3.87-3.13-6-7-6S5 5.13 5 9c0 1.5.5 2.5 1 3.5C5.5 13.5 5 14.7 5 16h1.5"/><circle cx="15" cy="9" r="1" fill="currentColor" stroke="none"/><path d="M6.5 16v3a1 1 0 0 0 1 1H9v-2"/><path d="M15 18v2h1.5a1 1 0 0 0 1-1v-2.3c1-.7 1.5-1.8 1.5-3.7"/></svg></div>
-        <h3>Spot patterns, save more</h3>
-        <p>Seeing where your money actually goes helps you naturally spend less.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></div>
-        <h3>Build a lasting budgeting habit</h3>
-        <p>Daily tracking turns good money habits into second nature.</p>
-      </div>
-    </div>
-  </div>
-</section>
+<main id="main">
 
-<section id="features">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Features</span>
-      <h2>Three things a good expense tracker has to get right.</h2>
-      <p>SpendWise isn't a bloated finance app with fifty settings you'll never touch. It's built around the moments that actually matter.</p>
-    </div>
-    <div class="feature-stack">
-      <div class="feature-card reveal">
-        <div class="feature-copy">
-          <h3>Log an expense before your coffee gets cold</h3>
-          <p>Tap "+", pick an amount and a category, and you're done. No forms, no mandatory notes, no friction — logging a spend this fast is the only way the habit actually sticks.</p>
-        </div>
-        <div class="feature-visual">
-          <div class="phone-frame">
-            <img src="./assets/screenshot-add-expense.png" alt="Add expense screen showing amount, category picker, and save button">
+  <!-- ------------------------------------------------------------- hero -->
+  <section class="hero">
+    <div class="wrap">
+      <span class="badge">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg>
+        Free to start · No account needed
+      </span>
+
+      <h1>Track Every Penny, Spend Wisely</h1>
+
+      <p class="hero-sub">SpendWise helps you understand where your money goes with effortless expense tracking, smart budgets, and insights that keep you in control — without guilt, jargon, or shame.</p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#download">Download App</a>
+        <a class="btn btn-ghost" href="#features">See how it works</a>
+      </div>
+
+      <div class="showcase">
+        <div class="phones">
+          <div class="phone phone-side">
+            <img src="./assets/screenshot-reports.png" width="276" height="600" alt="SpendWise Reports screen showing a category donut chart with a $945 monthly total broken down by Shopping, Food, Bills and Transport.">
           </div>
-          <span class="feature-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> 6-sec log</span>
-        </div>
-      </div>
-
-      <div class="feature-card reveal">
-        <div class="feature-copy">
-          <h3>See your month as a pie chart, not a spreadsheet</h3>
-          <p>Reports turns every expense you logged into one clear picture — a category-by-category pie chart plus the exact amount behind each slice, so "where did it all go" finally has an answer.</p>
-        </div>
-        <div class="feature-visual">
-          <div class="phone-frame">
-            <img src="./assets/screenshot-reports.png" alt="Reports screen showing a category breakdown pie chart">
+          <div class="phone phone-center">
+            <img src="./assets/screenshot-home.png" width="276" height="600" alt="SpendWise home screen showing $455 left of a monthly budget, a pacing message from Penny, and the month's transaction list.">
           </div>
-          <span class="feature-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg> Pie chart</span>
-        </div>
-      </div>
-
-      <div class="feature-card pro reveal">
-        <div class="feature-copy">
-          <span class="pro-tag">PRO</span>
-          <h3>Premium Insights: spending patterns you'd never spot on your own</h3>
-          <p>Pro surfaces a deeper read on your habits automatically — top spending categories, recurring merchants, and month-over-month pace — without you digging through reports yourself.</p>
-        </div>
-        <div class="feature-visual">
-          <div class="phone-frame">
-            <img src="./assets/screenshot-insights.png" alt="Premium Insights screen showing unlocked spending pattern cards">
-          </div>
-          <span class="feature-pill pill-pro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 4 3 12h14l3-12-6 7-4-7-4 7-6-7Z"/><path d="M5 20h14"/></svg> PRO</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="beforeafter">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">The difference</span>
-      <h2>What actually changes once you start tracking.</h2>
-      <p>A few examples of the difference tracking makes — swipe through.</p>
-    </div>
-    <div class="compare-carousel reveal">
-      <div class="compare-tabs" role="tablist">
-        <button type="button" class="compare-tab is-active" data-slide-goto="0" role="tab" aria-selected="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>
-          <span>Spend less</span>
-        </button>
-        <button type="button" class="compare-tab" data-slide-goto="1" role="tab" aria-selected="false">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><polyline points="8 15 10.5 17.5 16 12"/></svg>
-          <span>No-spend days</span>
-        </button>
-        <button type="button" class="compare-tab" data-slide-goto="2" role="tab" aria-selected="false">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-          <span>Everyday wins</span>
-        </button>
-        <button type="button" class="compare-tab" data-slide-goto="3" role="tab" aria-selected="false">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
-          <span>Stay in budget</span>
-        </button>
-      </div>
-      <div class="compare-slides">
-        <div class="compare-slide is-active" data-slide="0">
-          <div class="compare-table compare-table-trend">
-            <div class="slide-topbar">
-              <div class="slide-topbar-main">
-                <div class="trend-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg></div>
-                <div>
-                  <h3>Your spending actually goes down.</h3>
-                  <p>Once every expense is visible, overspending gets obvious — and easy to correct.</p>
-                </div>
-              </div>
-              <div class="slide-result">
-                <b>&minus;41%</b>
-                <span>spending by month 4</span>
-              </div>
-            </div>
-            <div class="slide-meta">
-              <span class="slide-source"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>Seen in Reports &amp; Insights</span>
-              <span class="illustrative-tag">Illustrative example</span>
-            </div>
-            <div class="trend-chart-plot">
-              <div class="trend-line trend-line-budget" style="bottom:77%"><span>Budget · $1,000</span></div>
-              <div class="trend-line trend-line-warn" style="bottom:58%"><span>75% mark</span></div>
-              <div class="trend-chart-bars">
-                <div class="trend-bar-col">
-                  <span class="trend-bar-value trend-bar-value-over">$1,150</span>
-                  <div class="trend-bar trend-bar-over" style="height:88%"></div>
-                </div>
-                <div class="trend-bar-col">
-                  <span class="trend-bar-value trend-bar-value-warn">$920</span>
-                  <div class="trend-bar trend-bar-warn" style="height:71%"></div>
-                </div>
-                <div class="trend-bar-col">
-                  <span class="trend-bar-value trend-bar-value-warn">$780</span>
-                  <div class="trend-bar trend-bar-warn" style="height:60%"></div>
-                </div>
-                <div class="trend-bar-col">
-                  <span class="trend-bar-value trend-bar-value-good">$680</span>
-                  <div class="trend-bar trend-bar-good" style="height:52%"></div>
-                </div>
-              </div>
-            </div>
-            <div class="trend-chart-months">
-              <span>Month 1</span><span>Month 2</span><span>Month 3</span><span>Month 4</span>
-            </div>
-            <div class="compare-foot compare-foot-trend">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19a4.5 4.5 0 1 0-1.4-8.8 6 6 0 1 0-11.1 3"/><polyline points="12 12 12 21"/><polyline points="9 18 12 21 15 18"/></svg>
-              <div>
-                <b>Small changes. <em>Big difference over time.</em></b>
-                <span>Keep going — you're building a better money habit.</span>
-              </div>
-            </div>
+          <div class="phone phone-side">
+            <img src="./assets/screenshot-insights.png" width="276" height="600" alt="SpendWise Insights screen showing $996 spent against a $600 budget, top spending category and a weekly spend bar chart.">
           </div>
         </div>
 
-        <div class="compare-slide" data-slide="1">
-          <div class="compare-table compare-table-streak">
-            <div class="slide-topbar">
-              <div class="slide-topbar-main">
-                <div class="trend-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><polyline points="8 15 10.5 17.5 16 12"/></svg></div>
-                <div>
-                  <h3>More days you don't spend at all.</h3>
-                  <p>Tracking turns a no-spend day into a streak you'll want to keep going.</p>
-                </div>
-              </div>
-              <div class="slide-result">
-                <b>3&times;</b>
-                <span>more no-spend days</span>
-              </div>
-            </div>
-            <div class="slide-meta">
-              <span class="slide-source"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Seen in Insights &rsaquo; Calendar view</span>
-              <span class="illustrative-tag">Illustrative example</span>
-            </div>
-
-            <div class="streak-block streak-before">
-              <div class="streak-info">
-                <b>January</b>
-                <span>2 no-spend days this month</span>
-              </div>
-              <div class="streak-days">
-                <div class="streak-dow"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span></div>
-                <div class="streak-squares">
-                  <span class="streak-day is-hit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 12 10 17 19 6"/></svg></span>
-                  <span class="streak-day is-hit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 12 10 17 19 6"/></svg></span>
-                  <span class="streak-day"></span>
-                  <span class="streak-day"></span>
-                  <span class="streak-day"></span>
-                  <span class="streak-day"></span>
-                  <span class="streak-day"></span>
-                </div>
-              </div>
-              <div class="streak-stat">
-                <b>2</b>
-                <span>no-spend days</span>
-                <em class="streak-chip streak-chip-before">Room to grow</em>
-              </div>
-            </div>
-
-            <div class="budgetbar-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg></div>
-
-            <div class="streak-block streak-after">
-              <div class="streak-info">
-                <b>April</b>
-                <span>6 no-spend days this month</span>
-              </div>
-              <div class="streak-days">
-                <div class="streak-dow"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span></div>
-                <div class="streak-squares">
-                  <span class="streak-day is-hit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 12 10 17 19 6"/></svg></span>
-                  <span class="streak-day is-hit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 12 10 17 19 6"/></svg></span>
-                  <span class="streak-day is-hit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 12 10 17 19 6"/></svg></span>
-                  <span class="streak-day is-hit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 12 10 17 19 6"/></svg></span>
-                  <span class="streak-day is-hit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 12 10 17 19 6"/></svg></span>
-                  <span class="streak-day is-hit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 12 10 17 19 6"/></svg></span>
-                  <span class="streak-day"></span>
-                </div>
-              </div>
-              <div class="streak-stat">
-                <b>6</b>
-                <span>no-spend days</span>
-                <em class="streak-chip streak-chip-after">Great progress</em>
-              </div>
-            </div>
-
-            <div class="compare-foot compare-foot-trend">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-              <div>
-                <b>Build the habit. <em>Watch it add up.</em></b>
-                <span>Every extra no-spend day is money that stays in your pocket.</span>
-              </div>
-            </div>
-          </div>
+        <div class="float-card float-left">
+          <span class="float-eyebrow">Daily spend trend</span>
+          <p class="float-title">Your spending swings day to day.</p>
+          <svg class="spark" viewBox="0 0 200 40" fill="none" preserveAspectRatio="none" aria-hidden="true">
+            <polyline points="0,32 12,20 24,34 36,14 48,30 60,10 72,28 84,18 96,33 108,12 120,26 132,16 144,31 156,9 168,27 180,19 192,30 200,22" stroke="#22c55e" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+          </svg>
+          <p class="float-meta">Avg $41/day · 2nd: $157 spent</p>
         </div>
 
-        <div class="compare-slide" data-slide="2">
-          <div class="compare-table">
-            <div class="slide-topbar">
-              <div class="slide-topbar-main">
-                <div class="trend-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
-                <div>
-                  <h3>The everyday friction disappears.</h3>
-                  <p>Four things that used to be a hassle, handled — every single day.</p>
-                </div>
-              </div>
-              <div class="slide-result">
-                <b>6 sec</b>
-                <span>to log an expense</span>
-              </div>
-            </div>
-            <div class="slide-meta">
-              <span class="slide-source"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Seen across the whole app</span>
-            </div>
-            <div class="compare-head">
-              <span></span>
-              <span class="compare-head-label compare-head-before">Before</span>
-              <span></span>
-              <span class="compare-head-label compare-head-after">With SpendWise</span>
-            </div>
-            <div class="compare-row">
-              <div class="compare-label">
-                <div class="compare-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" y1="20" x2="6" y2="16"/><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/></svg></div>
-                <h3>Where did it all go?</h3>
-              </div>
-              <div class="compare-before">Guessing, checking old bank statements</div>
-              <div class="compare-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
-              <div class="compare-after">One glance at a clear pie chart</div>
-            </div>
-            <div class="compare-row">
-              <div class="compare-label">
-                <div class="compare-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
-                <h3>Logging an expense</h3>
-              </div>
-              <div class="compare-before">A chore you keep putting off</div>
-              <div class="compare-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
-              <div class="compare-after">Done in about 6 seconds</div>
-            </div>
-            <div class="compare-row">
-              <div class="compare-label">
-                <div class="compare-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
-                <h3>Spending in another currency</h3>
-              </div>
-              <div class="compare-before">Manual conversion, mental math</div>
-              <div class="compare-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
-              <div class="compare-after">50+ currencies, picked once</div>
-            </div>
-            <div class="compare-row">
-              <div class="compare-label">
-                <div class="compare-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div>
-                <h3>Going over budget</h3>
-              </div>
-              <div class="compare-before">Guilt, red alerts, silence after</div>
-              <div class="compare-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
-              <div class="compare-after">A gentle nudge from Penny, next steps</div>
-            </div>
-            <div class="compare-foot">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19a4.5 4.5 0 1 0-1.4-8.8 6 6 0 1 0-11.1 3"/><polyline points="12 12 12 21"/><polyline points="9 18 12 21 15 18"/></svg>
-              <div>
-                <b>Small habits, real change.</b>
-                <span>A few seconds a day is all it takes to stop guessing.</span>
-              </div>
-            </div>
+        <div class="float-card float-right">
+          <span class="float-eyebrow">Weekly spend</span>
+          <p class="float-title">Week 3 was your biggest spend week.</p>
+          <div class="minibars" aria-hidden="true">
+            <span style="height:42%"></span>
+            <span style="height:58%"></span>
+            <span class="peak" style="height:100%"></span>
+            <span style="height:48%"></span>
           </div>
+          <p class="float-meta">Week 3 · $546 spent</p>
         </div>
-
-        <div class="compare-slide" data-slide="3">
-          <div class="compare-table compare-table-budget">
-            <div class="slide-topbar">
-              <div class="slide-topbar-main">
-                <div class="trend-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div>
-                <div>
-                  <h3>You stay inside your budget.</h3>
-                  <p>A clear warning at 75% means you course-correct long before you overshoot.</p>
-                </div>
-              </div>
-              <div class="slide-result">
-                <b>70%</b>
-                <span>of budget used, from 120%</span>
-              </div>
-            </div>
-            <div class="slide-meta">
-              <span class="slide-source"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Seen on your Dashboard</span>
-              <span class="illustrative-tag">Illustrative example</span>
-            </div>
-            <div class="budgetbar-block budgetbar-before">
-              <div class="budgetbar-head">
-                <span class="budgetbar-label">Before</span>
-                <span class="budgetbar-sub">Overspending without realizing</span>
-              </div>
-              <div class="budgetbar-row">
-                <span class="budgetbar-name">Budget</span>
-                <div class="budgetbar-track">
-                  <div class="budgetbar-fill budgetbar-fill-over" style="width:96%"></div>
-                  <div class="budgetbar-marker budgetbar-marker-warn" style="left:60%"><span>75%</span></div>
-                  <div class="budgetbar-marker" style="left:80%"><span>100%</span></div>
-                </div>
-                <span class="budgetbar-pct budgetbar-pct-over">120%</span>
-              </div>
-              <div class="budgetbar-foot"><span>$1,200 spent</span><span>$1,000 budget</span></div>
-              <span class="budgetbar-chip budgetbar-chip-over">Overspent by $200</span>
-            </div>
-            <div class="budgetbar-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg></div>
-            <div class="budgetbar-block budgetbar-after">
-              <div class="budgetbar-head">
-                <span class="budgetbar-label">After</span>
-                <span class="budgetbar-sub">Stayed within budget and in control</span>
-              </div>
-              <div class="budgetbar-row">
-                <span class="budgetbar-name">Budget</span>
-                <div class="budgetbar-track">
-                  <div class="budgetbar-fill budgetbar-fill-under" style="width:56%"></div>
-                  <div class="budgetbar-marker budgetbar-marker-warn" style="left:60%"><span>75%</span></div>
-                  <div class="budgetbar-marker" style="left:80%"><span>100%</span></div>
-                </div>
-                <span class="budgetbar-pct budgetbar-pct-under">70%</span>
-              </div>
-              <div class="budgetbar-foot"><span>$700 spent</span><span>$1,000 budget</span></div>
-              <span class="budgetbar-chip budgetbar-chip-under">Stayed within budget</span>
-            </div>
-            <div class="compare-foot compare-foot-benefits">
-              <div class="benefit-chip">
-                <div class="benefit-chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div>
-                <span>Less stress<br>More confidence</span>
-              </div>
-              <div class="benefit-chip">
-                <div class="benefit-chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg></div>
-                <span>Better control<br>of your money</span>
-              </div>
-              <div class="benefit-chip">
-                <div class="benefit-chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v6c0 4.5 3 8 7 9 4-1 7-4.5 7-9V6l-7-3Z"/><polyline points="9 12 11 14 15 10"/></svg></div>
-                <span>Stronger habits<br>every month</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="compare-nav">
-        <button type="button" class="compare-arrow-btn" data-carousel-prev aria-label="Previous comparison">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
-        </button>
-        <span class="compare-counter"><b data-carousel-current>1</b> / 4</span>
-        <button type="button" class="compare-arrow-btn" data-carousel-next aria-label="Next comparison">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
-        </button>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="premium-section" id="premium">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Premium</span>
-      <h2>Go further with SpendWise Pro.</h2>
-      <p>Everything above is free, forever. Pro is an optional upgrade for people who want custom categories, exports, and deeper spending insights on top.</p>
+  <!-- --------------------------------------------------------- features -->
+  <section class="section section-alt" id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Product Highlights</span>
+        <h2>Discover the remarkable features of <span class="green">SpendWise</span></h2>
+        <p>Explore Penny's standout features that help you build better money habits and calmer months — from quick logging to gentle nudges.</p>
+      </div>
+
+      <div class="split">
+        <div class="split-col">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#15803d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 10h18M8 15h4"/></svg>
+            </div>
+            <h3>Smart Budgeting</h3>
+            <p>Create a budget that fits your life and stick to it easily.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#15803d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg>
+            </div>
+            <h3>Expense Tracking</h3>
+            <p>Track every expense in seconds and never lose track of your money.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#15803d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 6-2 7-2 7h16s-2-1-2-7"/><path d="M10.5 20a2 2 0 0 0 3 0"/></svg>
+            </div>
+            <h3>Smart Reminders</h3>
+            <p>Get gentle nudges for bills, budgets and goals — never miss a thing.</p>
+          </article>
+        </div>
+
+        <div class="split-visual">
+          <img src="./assets/penny-celebrating.png" width="400" height="400" alt="Penny, the SpendWise piggy-bank mascot, celebrating." loading="lazy">
+        </div>
+
+        <div class="split-col">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#15803d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20V10M12 20V4M19 20v-7"/></svg>
+            </div>
+            <h3>Insightful Reports</h3>
+            <p>Understand your spending with beautiful charts and reports.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#15803d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v9l6 3"/></svg>
+            </div>
+            <h3>Spending Insights</h3>
+            <p>Discover patterns, spot overspending and make smarter choices.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#15803d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6z"/><path d="M9.5 12l1.8 1.8L15 10"/></svg>
+            </div>
+            <h3>Secure &amp; Reliable</h3>
+            <p>Your data is encrypted in transit and readable only by your own account.</p>
+          </article>
+        </div>
+      </div>
     </div>
-    <div class="premium-bento reveal-group">
-      <div class="p-cell p-tall">
-        <div class="p-ring" style="--pct:68"><span class="p-ring-num">68%</span><span class="p-ring-label">of budget</span></div>
-        <h3>Premium Insights, unlocked</h3>
-        <p>Your budget pace, top category, and more — the moment you open the app.</p>
-        <span class="p-link">Included in Pro →</span>
+  </section>
+
+  <!-- ------------------------------------------------------- advantages -->
+  <section class="section" id="advantages">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow eyebrow-pill">The Advantages</span>
+        <h2><span class="green">Unlock the Advantages of SpendWise</span></h2>
+        <p>A smarter way to handle money, packed with benefits that add up over time.</p>
       </div>
 
-      <div class="p-cell p-wide">
-        <div class="p-bars">
-          <span style="--h:55%"></span><span style="--h:38%"></span><span style="--h:72%" class="hi"></span><span style="--h:44%"></span><span style="--h:60%"></span><span style="--h:30%"></span>
+      <div class="split">
+        <div class="split-col">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#15803d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg>
+            </div>
+            <h3>Build Real Awareness</h3>
+            <p>See your spending patterns clearly so you can change them gently.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#15803d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="3"/><path d="M3 10h18M16.5 14.5h.01"/></svg>
+            </div>
+            <h3>Save Without Stress</h3>
+            <p>Small, goal-based nudges that make saving feel achievable.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#15803d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </div>
+            <h3>Never Lose Data</h3>
+            <p>Free cloud backup when you sign in — because trust matters in a finance app.</p>
+          </article>
         </div>
-        <h3>Patterns you'd never spot yourself</h3>
-        <p>Your best month yet and weekday spending patterns, surfaced automatically.</p>
-      </div>
 
-      <div class="p-cell p-mid">
-        <div class="p-chips">
-          <span class="p-chip">$</span><span class="p-chip">€</span><span class="p-chip">₹</span><span class="p-chip">¥</span><span class="p-chip">£</span>
+        <div class="split-visual">
+          <div class="visual-blob">
+            <img src="./assets/screenshot-insights.png" width="276" height="600" alt="SpendWise Insights screen highlighting the biggest spending category for the month." loading="lazy">
+          </div>
         </div>
-        <h3>Every currency, from day one</h3>
-        <p>Pick yours during setup — 50+ currencies to choose from.</p>
-        <span class="p-link" style="color:var(--money600)">Free for everyone →</span>
-      </div>
 
-      <div class="p-cell p-dark">
-        <div class="p-cal">
-          <span></span><span></span><span class="hi"></span><span></span><span></span><span></span><span></span>
-          <span></span><span class="hi"></span><span></span><span></span><span></span><span></span><span></span>
+        <div class="split-col">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#15803d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 19a6 6 0 0 1 12 0"/><path d="M16 11h5M18.5 8.5v5"/></svg>
+            </div>
+            <h3>Stay in Control</h3>
+            <p>Set a monthly budget that fits your life, not someone else's rulebook.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#15803d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+            </div>
+            <h3>Privacy-First</h3>
+            <p>Your expenses live on your device. No account required to start.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#15803d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18l5-5 3 3 8-8"/><path d="M20 4v5h-5"/></svg>
+            </div>
+            <h3>Grow On Your Terms</h3>
+            <p>Custom categories and deeper insights when you're ready for Pro.</p>
+          </article>
         </div>
-        <h3>A calendar view of your spending</h3>
-        <p>Spot your biggest spend days across the month, at a glance.</p>
-        <span class="p-link">Included in Pro →</span>
       </div>
+    </div>
+  </section>
 
-      <div class="p-cell p-cta">
+  <!-- -------------------------------------------------------- cta band -->
+  <section class="section" id="download" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta-band">
         <div>
-          <h3>Unlock everything with Pro</h3>
-          <p>One upgrade inside the app, no separate purchase here.</p>
-          <a class="p-link" href="#download">Get the app →</a>
+          <h2>Download now for calmer, kinder budgeting</h2>
+          <p>Elevate your money habits with Penny. SpendWise is in testing right now — the Play Store listing goes live soon.</p>
         </div>
-        <div class="p-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 4 3 12h14l3-12-6 7-4-7-4 7-6-7Z"/><path d="M5 20h14"/></svg></div>
-      </div>
-
-      <div class="p-cell p-support">
-        <h3>Custom categories &amp; exports</h3>
-        <p>Name your own categories, then export clean CSV/PDF reports — both included in Pro.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="reviews">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Testimonials</span>
-      <h2>People actually keep this one open.</h2>
-    </div>
-    <!-- Placeholder quotes for layout — swap in real user reviews before this page goes live. -->
-    <div class="testimonials reveal-group">
-      <div class="testimonial">
-        <div class="stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-        <p>"First expense tracker I didn't delete after a week. Logging an expense takes like 5 seconds."</p>
-        <div class="who">
-          <div class="avatar" style="background:var(--money500)">A</div>
-          <div><b>Ananya R.</b><span>Bengaluru</span></div>
-        </div>
-      </div>
-      <div class="testimonial">
-        <div class="stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-        <p>"Went over budget one month and the app was actually kind about it instead of guilt-tripping me. Small thing, but it matters."</p>
-        <div class="who">
-          <div class="avatar" style="background:var(--money600)">P</div>
-          <div><b>Priya M.</b><span>Mumbai</span></div>
-        </div>
-      </div>
-      <div class="testimonial">
-        <div class="stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-        <p>"No forced sign-up, works fully offline, and the reports finally showed me where my money actually goes."</p>
-        <div class="who">
-          <div class="avatar" style="background:var(--money700)">J</div>
-          <div><b>Jordan K.</b><span>Austin, TX</span></div>
+        <div class="store-row">
+          <span class="store-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 3.5v17c0 .6.6 1 1.1.7l11.4-8.5c.4-.3.4-.9 0-1.2L5.1 2.8A.85.85 0 0 0 4 3.5z"/></svg>
+            <span><small>Coming soon to</small><strong>Google Play</strong></span>
+          </span>
+          <span class="store-badge light">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.4-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.7.8-3.3.8-.7 0-1.7-.8-2.8-.8-1.5 0-2.8.9-3.6 2.2-1.5 2.6-.4 6.5 1.1 8.6.7 1 1.6 2.2 2.7 2.2 1.1 0 1.5-.7 2.8-.7s1.6.7 2.8.7 1.9-1 2.6-2a9 9 0 0 0 1.2-2.4c-.1 0-2.2-.9-2.2-3.5zM14.3 5.9c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1.1 1.7-1 2.6 1 .1 2-.5 2.7-1.2z"/></svg>
+            <span><small>Coming soon to</small><strong>App Store</strong></span>
+          </span>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="faq">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">FAQ</span>
-      <h2>Questions, answered.</h2>
-    </div>
-    <div class="faq reveal-group">
-      <details open>
-        <summary>Is SpendWise free to use?</summary>
-        <p>Yes. Adding expenses, your dashboard, basic reports and insights, default categories, and cloud backup are free for everyone. Pro adds custom categories, CSV/PDF export, and deeper insights.</p>
-      </details>
-      <details>
-        <summary>Do I need to create an account to track expenses?</summary>
-        <p>No. SpendWise is fully usable as a guest with zero sign-up. Create an account later only if you want your expenses backed up to the cloud and synced across devices.</p>
-      </details>
-      <details>
-        <summary>Is my financial data safe and private?</summary>
-        <p>Your expenses live on your device first. If you sign in, backups are protected per-account on our backend — your data is never sold or shared with third parties.</p>
-      </details>
-      <details>
-        <summary>Is SpendWise available on iOS?</summary>
-        <p>SpendWise is available on Android today. iOS is coming soon — check back here for the App Store link.</p>
-      </details>
-      <details>
-        <summary>Which currencies does SpendWise support?</summary>
-        <p>SpendWise supports 50+ currencies from around the world — from the Indian Rupee and US Dollar to the Euro, British Pound, and currencies across the Middle East, Asia Pacific, and Africa. Pick yours during setup and amounts are stored precisely down to the smallest unit, so your totals are always exact.</p>
-      </details>
-      <details>
-        <summary>How is SpendWise different from other expense tracking apps?</summary>
-        <p>Most expense tracking apps go straight to red alerts and shame you for overspending. SpendWise, guided by Penny the mascot, keeps nudges warm and encouraging, logs expenses in a few taps, and never forces you to sign up before you've decided if you like it.</p>
-      </details>
-      <details>
-        <summary>Does SpendWise sync across multiple devices?</summary>
-        <p>Yes. Sign in with email or Google and your expenses back up automatically — free for every account, not just Pro — so they're there when you open the app on another device.</p>
-      </details>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="cta-band reveal-group">
-      <div>
-        <h2>Ready to stop guessing where your money went?</h2>
-        <p>Download the free expense tracker for Android. No credit card, no account required to start.</p>
+  <!-- ------------------------------------------------------------- blog -->
+  <section class="section section-alt" id="blog">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Our Blogs</span>
+        <h2>Explore <span class="green-italic">Our Blog</span></h2>
+        <p>Dive into our blog for expert insights, gentle money habits, and stories from savers who reshaped their monthly rhythm.</p>
       </div>
-      <img src="./assets/penny-celebrating.png" alt="">
-      <div class="cta-band-ctas">
-        <a class="btn btn-primary" href="#">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-          Download for Android
-        </a>
-        <span class="btn btn-ghost">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.702z"/></svg>
-          iOS — coming soon
-        </span>
+
+      <div class="blog-grid">
+        <article class="blog-card">
+          <div class="blog-thumb" aria-hidden="true">
+            <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#15803d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"><rect x="4" y="3" width="16" height="18" rx="2.5"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+          </div>
+          <div class="blog-body">
+            <h3>Building a budget you'll actually stick to</h3>
+            <p>Understanding the psychology of budget adherence and the small design choices that make daily logging feel easy.</p>
+            <div class="blog-foot">
+              <span class="byline"><i aria-hidden="true"></i> SpendWise</span>
+              <span>4 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-thumb lemon" aria-hidden="true">
+            <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#7a8a1f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          </div>
+          <div class="blog-body">
+            <h3>Why your expenses stay on your device by default</h3>
+            <p>What privacy-first actually means in a money app, and why we ask you to sign in only when you want a backup.</p>
+            <div class="blog-foot">
+              <span class="byline"><i aria-hidden="true"></i> SpendWise</span>
+              <span>6 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-thumb mint" aria-hidden="true">
+            <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#15803d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"><path d="M4 18l5-6 4 3 7-9"/></svg>
+          </div>
+          <div class="blog-body">
+            <h3>Reading your monthly report without the shame spiral</h3>
+            <p>Understand how to interpret spending patterns as information, not indictment. Small mindset shifts, big outcomes.</p>
+            <div class="blog-foot">
+              <span class="byline"><i aria-hidden="true"></i> SpendWise</span>
+              <span>14 min read</span>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer>
+</main>
+
+<footer class="site-footer">
   <div class="wrap">
     <div class="footer-top">
-      <div class="footer-left">
-        <a class="footer-brand" href="#top">
-          <img src="./assets/penny-waving.png" alt="">
-          <span>SpendWise</span>
+      <div>
+        <a class="brand" href="./">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg>
+          </span>
+          SpendWise
         </a>
-        <p class="footer-tagline">The free expense tracker app that never shames you for spending.</p>
+        <p class="footer-tagline">Empowering everyday savers to build calmer, kinder money habits — one small entry at a time.</p>
+        <div class="socials">
+          <a href="mailto:startspendwise@gmail.com" aria-label="Email SpendWise">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>
+          </a>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="#features">Features</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#faq">FAQ</a>
-        <a href="./privacy-policy.html">Privacy Policy</a>
-        <a href="./delete-account.html">Delete Account &amp; Data</a>
+
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#advantages">Advantages</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="mailto:startspendwise@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="./delete-account.html">Data Deletion</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Download our App</h4>
+        <ul>
+          <li>
+            <span class="store-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 3.5v17c0 .6.6 1 1.1.7l11.4-8.5c.4-.3.4-.9 0-1.2L5.1 2.8A.85.85 0 0 0 4 3.5z"/></svg>
+              <span><small>Coming soon to</small><strong>Google Play</strong></span>
+            </span>
+          </li>
+          <li>
+            <span class="store-badge light">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.4-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.7.8-3.3.8-.7 0-1.7-.8-2.8-.8-1.5 0-2.8.9-3.6 2.2-1.5 2.6-.4 6.5 1.1 8.6.7 1 1.6 2.2 2.7 2.2 1.1 0 1.5-.7 2.8-.7s1.6.7 2.8.7 1.9-1 2.6-2a9 9 0 0 0 1.2-2.4c-.1 0-2.2-.9-2.2-3.5zM14.3 5.9c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1.1 1.7-1 2.6 1 .1 2-.5 2.7-1.2z"/></svg>
+              <span><small>Coming soon to</small><strong>App Store</strong></span>
+            </span>
+          </li>
+        </ul>
       </div>
     </div>
+
     <div class="footer-bottom">
-      <span>© 2026 SpendWise. Made with Penny.</span>
+      <span>© 2026 SpendWise. All rights reserved.</span>
+      <nav>
+        <a href="./privacy-policy.html">Privacy</a>
+        <a href="./delete-account.html">Data Deletion</a>
+      </nav>
     </div>
   </div>
 </footer>
 
-<script>
-  if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
-    document.querySelectorAll('.reveal, .reveal-group').forEach(function (el) { io.observe(el); });
-  } else {
-    document.querySelectorAll('.reveal, .reveal-group').forEach(function (el) { el.classList.add('is-visible'); });
-  }
-
-  document.querySelectorAll('.compare-carousel').forEach(function (carousel) {
-    var slides = carousel.querySelectorAll('.compare-slide');
-    var tabs = carousel.querySelectorAll('.compare-tab');
-    var counter = carousel.querySelector('[data-carousel-current]');
-    var current = 0;
-    function goTo(index) {
-      current = (index + slides.length) % slides.length;
-      slides.forEach(function (s, i) { s.classList.toggle('is-active', i === current); });
-      tabs.forEach(function (t, i) {
-        var on = i === current;
-        t.classList.toggle('is-active', on);
-        t.setAttribute('aria-selected', on ? 'true' : 'false');
-      });
-      if (counter) counter.textContent = current + 1;
-    }
-    tabs.forEach(function (tab, i) { tab.addEventListener('click', function () { goTo(i); }); });
-    var prev = carousel.querySelector('[data-carousel-prev]');
-    var next = carousel.querySelector('[data-carousel-next]');
-    if (prev) prev.addEventListener('click', function () { goTo(current - 1); });
-    if (next) next.addEventListener('click', function () { goTo(current + 1); });
-  });
-</script>
 </body>
 </html>
