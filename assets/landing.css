@@ -179,70 +179,13 @@ h1, h2, h3 {
 
 /* --------------------------------------------------------- phone showcase */
 
-.showcase { position: relative; margin: 56px auto 0; max-width: 900px; padding-bottom: 80px; }
+/* One pre-composed export (phones + the two floating stat cards are baked in).
+   This replaced ~100 lines of CSS that framed three screenshots and positioned
+   the float cards by hand — they never lined up, because the mockup's phones
+   are a different aspect ratio than the raw screenshots. */
+.showcase { margin: 52px auto 0; max-width: 1000px; }
 
-.phones { display: flex; align-items: flex-end; justify-content: center; gap: 22px; }
-
-.phone {
-  flex: none;
-  width: 218px;
-  border-radius: 34px;
-  background: #10231a;
-  padding: 8px;
-  box-shadow: var(--shadow-float);
-  position: relative;
-}
-
-.phone::before {
-  content: "";
-  position: absolute;
-  top: 16px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 74px;
-  height: 20px;
-  background: #10231a;
-  border-radius: var(--radius-pill);
-  z-index: 2;
-}
-
-.phone img { border-radius: 27px; width: 100%; }
-
-.phone-center { width: 250px; z-index: 3; }
-.phone-side { margin-bottom: 26px; }
-
-/* Floating stat cards. Hidden below 1000px — they overlap the phones badly at
-   narrow widths and carry no information stated nowhere else. */
-.float-card {
-  position: absolute;
-  background: var(--card);
-  border: 1px solid var(--line-soft);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-float);
-  padding: 14px 16px;
-  text-align: left;
-  width: 216px;
-}
-
-.float-left { left: -18px; bottom: 150px; }
-.float-right { right: -8px; top: 42px; }
-
-.float-eyebrow {
-  font-size: 9.5px;
-  font-weight: 700;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--money600);
-}
-
-.float-title { font-size: 13.5px; font-weight: 600; margin-top: 7px; line-height: 1.35; }
-.float-meta { font-size: 10.5px; color: var(--text-tertiary); margin-top: 8px; }
-
-.spark { margin-top: 8px; display: block; width: 100%; height: 40px; }
-
-.minibars { display: flex; align-items: flex-end; gap: 7px; height: 44px; margin-top: 10px; }
-.minibars span { flex: 1; background: var(--money200); border-radius: 4px 4px 2px 2px; }
-.minibars span.peak { background: var(--money500); }
+.hero-art { width: 100%; height: auto; }
 
 /* ---------------------------------------------------------------- sections */
 
@@ -289,16 +232,7 @@ h1, h2, h3 {
 .feature-card p { margin: 7px 0 0; color: var(--text-body); font-size: 14px; line-height: 1.55; }
 
 .split-visual { display: grid; place-items: center; }
-.split-visual img { width: 100%; max-width: 300px; }
-
-.visual-blob {
-  background: linear-gradient(160deg, var(--money100), #eafaf0 60%, #fff);
-  border-radius: var(--radius-xl);
-  padding: 30px 26px;
-  width: 100%;
-}
-
-.visual-blob img { border-radius: 16px; box-shadow: var(--shadow-card); max-width: 240px; margin: 0 auto; }
+.split-visual img { width: 100%; max-width: 330px; }
 
 /* ---------------------------------------------------------------- cta band */
 
@@ -410,32 +344,25 @@ h1, h2, h3 {
 /* ---------------------------------------------------------------- responsive */
 
 @media (max-width: 1000px) {
-  .float-card { display: none; }
-  .showcase { padding-bottom: 20px; }
   .footer-top { grid-template-columns: 1fr 1fr 1fr; }
 }
 
 @media (max-width: 880px) {
   .split { grid-template-columns: 1fr; }
-  .split-visual { order: -1; max-width: 320px; margin: 0 auto; }
+  .split-visual { order: -1; max-width: 330px; margin: 0 auto; }
   .blog-grid { grid-template-columns: 1fr; max-width: 460px; margin: 0 auto; }
 }
 
 @media (max-width: 760px) {
   .site-nav { display: none; }
   .section { padding: 60px 0; }
-  .phones { gap: 12px; }
-  .phone { width: 150px; border-radius: 26px; }
-  .phone img { border-radius: 20px; }
-  .phone-center { width: 172px; }
-  .phone::before { width: 52px; height: 15px; top: 12px; }
+  .hero { padding-top: 48px; }
+  .showcase { margin-top: 38px; }
   .cta-band { padding: 32px 26px; }
   .footer-top { grid-template-columns: 1fr 1fr; gap: 28px; }
 }
 
 @media (max-width: 460px) {
-  .phone-side { display: none; }
-  .phone-center { width: 230px; }
   .footer-top { grid-template-columns: 1fr; }
 }
 
