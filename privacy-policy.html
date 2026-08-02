@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SpendWise — Privacy Policy</title>
+<meta name="color-scheme" content="light">
+<link rel="icon" href="./assets/favicon.png">
+<link rel="stylesheet" href="./assets/legal.css">
+</head>
+<body>
+  <div class="header">
+    <img src="./assets/penny-waving.png" alt="Penny, the SpendWise mascot">
+    <div class="brand">SpendWise<small>Smart Budget Tracker</small></div>
+  </div>
+
+  <div class="card">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: July 2026</p>
+
+    <h2>1. Introduction</h2>
+    <p>Welcome to SpendWise ("we", "our", or "us"). SpendWise is a personal budget tracking app designed to help you understand and manage your spending. We are committed to protecting your privacy. This Privacy Policy explains what information we collect, how we use it, and your rights regarding that information.</p>
+    <p>By using SpendWise, you agree to the terms described in this policy.</p>
+
+    <h2>2. Information We Collect</h2>
+
+    <h3>2.1 Account Information</h3>
+    <p>When you create a SpendWise account, we collect your email address, used to create and authenticate your account via Supabase Authentication — either a one-time email code, or Google Sign-In. If you choose Google Sign-In, we also receive your name from your Google account, which we use only to greet you inside the app. We do not collect your phone number, date of birth, or any other personal identifiers unless you voluntarily provide them.</p>
+
+    <h3>2.2 Financial Data You Enter</h3>
+    <p>All expense and budget data you enter is stored locally on your device. This includes:</p>
+    <ul>
+      <li>Expense amounts, categories, dates, and optional notes or merchant names</li>
+      <li>Monthly budget limits and goals</li>
+      <li>Currency preferences</li>
+    </ul>
+    <p>As a guest (no account), this data never leaves your device. If you create a SpendWise account and sign in — free or Pro — your expense data is also automatically backed up to our servers, so it survives a logout, reinstall, or new device. See Section 4 for details.</p>
+
+    <h3>2.3 App Usage Preferences</h3>
+    <p>We store your in-app settings locally, including notification preferences and reminder times, category preferences, and display preferences.</p>
+
+    <h3>2.4 Purchase Information (SpendWise Pro)</h3>
+    <p>If you subscribe to SpendWise Pro, in-app purchases are processed by RevenueCat and your device's app store (Google Play). We receive confirmation of your purchase status but do not handle or store your payment card details.</p>
+
+    <h3>2.5 Usage Analytics &amp; Crash Reporting</h3>
+    <p>We use PostHog, a product analytics provider, to understand how the app is used and to improve it — for example, which screens are visited and whether key actions (like completing onboarding or adding an expense) succeed.</p>
+    <ul>
+      <li>We send category and currency for an added expense, but never the amount, notes, or merchant name.</li>
+      <li>We never send your email address or any other account identifier to PostHog beyond an internal account ID used to avoid double-counting a signed-in user across devices.</li>
+      <li>If the app crashes or hits an unexpected error, PostHog automatically captures a technical error report (the error message and where in the app it happened) to help us fix it — governed by the same toggle below.</li>
+      <li>Analytics (including crash reporting) is on by default and can be turned off at any time in Profile → Share usage analytics — no account or data access is affected by turning it off.</li>
+    </ul>
+
+    <h2>3. How We Use Your Information</h2>
+    <table>
+      <tr><th>Data</th><th>Purpose</th></tr>
+      <tr><td>Email address</td><td>Account creation, login, and authentication (including via Google Sign-In)</td></tr>
+      <tr><td>Expense &amp; budget data</td><td>Core app functionality — budgeting and tracking</td></tr>
+      <tr><td>Purchase status</td><td>Unlocking SpendWise Pro features</td></tr>
+      <tr><td>Notification preferences</td><td>Sending local reminders you have configured</td></tr>
+    </table>
+    <p>We do not use your data for advertising. We do not sell your data. We do not share your data with third parties for marketing.</p>
+
+    <h2>4. Data Storage &amp; Security</h2>
+    <h3>Guest (no account)</h3>
+    <p>All your expense data, budget limits, and preferences are stored locally on your device only. We do not transmit this data to any server.</p>
+    <h3>Signed-in accounts — Cloud Backup</h3>
+    <p>Once you create a SpendWise account and sign in, your expense data is automatically transmitted to and stored on secure servers as a backup — this applies to free and Pro accounts alike. Data is encrypted in transit (TLS) and at rest.</p>
+    <h3>Authentication Data</h3>
+    <p>Your account credentials are managed by Supabase, a GDPR-compliant backend platform. Supabase stores your email and securely hashed credentials.</p>
+
+    <h2>5. Third-Party Services</h2>
+    <table>
+      <tr><th>Service</th><th>Purpose</th></tr>
+      <tr><td>Supabase</td><td>Account authentication (email sign-in or Google Sign-In) &amp; cloud backup — <a href="https://supabase.com/privacy">supabase.com/privacy</a></td></tr>
+      <tr><td>Google Sign-In</td><td>If you choose to sign in with Google, we receive your name and email from your Google account — <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+      <tr><td>RevenueCat</td><td>In-app purchase management — <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></td></tr>
+      <tr><td>Google Play</td><td>App distribution &amp; purchases — <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+      <tr><td>PostHog</td><td>Product usage analytics (see 2.5) — <a href="https://posthog.com/privacy">posthog.com/privacy</a></td></tr>
+    </table>
+    <p>We do not use Google Analytics, Facebook SDK, or any advertising SDKs.</p>
+
+    <h2>6. Permissions We Request</h2>
+    <table>
+      <tr><th>Permission</th><th>Why</th></tr>
+      <tr><td>POST_NOTIFICATIONS (Android 13+)</td><td>Send local daily reminders and budget alerts — opt-in</td></tr>
+      <tr><td>INTERNET</td><td>Account login and cloud backup — required for account features</td></tr>
+    </table>
+    <p>We never request access to your camera, microphone, contacts, location, or photo library.</p>
+
+    <h2>7. Children's Privacy</h2>
+    <p>SpendWise is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us at <a href="mailto:harshitcreativestudio@gmail.com">harshitcreativestudio@gmail.com</a> and we will delete it promptly.</p>
+
+    <h2>8. Data Retention</h2>
+    <ul>
+      <li><strong>Local data:</strong> stored on your device for as long as you use the app. Deleted when you uninstall or clear app data.</li>
+      <li><strong>Account data:</strong> retained as long as your account is active.</li>
+      <li><strong>Cloud backup data (any signed-in account):</strong> deleted immediately and permanently when you delete your account. See <a href="./delete-account.html">Account &amp; Data Deletion</a>.</li>
+    </ul>
+
+    <h2>9. Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li><strong>Access</strong> — request a copy of the data we hold about you</li>
+      <li><strong>Correction</strong> — correct inaccurate account data</li>
+      <li><strong>Deletion</strong> — delete your account and all associated data at any time, in-app or via this page: <a href="./delete-account.html">Account &amp; Data Deletion</a></li>
+      <li><strong>Portability</strong> — request your expense data in a portable format (CSV export, available in-app)</li>
+      <li><strong>Withdraw consent</strong> — revoke notification permissions at any time via device settings, or turn off usage analytics at any time in Profile → Share usage analytics</li>
+    </ul>
+    <p>To exercise any of these rights, contact us at <a href="mailto:harshitcreativestudio@gmail.com">harshitcreativestudio@gmail.com</a>.</p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy as the app evolves. When we do, we will update the date above and, for material changes, notify you via an in-app notice. Continued use of SpendWise after a change constitutes acceptance of the revised policy.</p>
+
+    <h2>11. Contact Us</h2>
+    <p>SpendWise — <a href="mailto:harshitcreativestudio@gmail.com">harshitcreativestudio@gmail.com</a></p>
+
+    <div class="footer-nav">
+      <a href="./delete-account.html">→ Delete Your Account &amp; Data</a>
+    </div>
+  </div>
+</body>
+</html>
