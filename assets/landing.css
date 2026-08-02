@@ -52,7 +52,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-img { max-width: 100%; display: block; }
+/* height:auto is load-bearing — without it the HTML height="..." attribute
+   applies as CSS height, and any image whose width we constrain renders
+   stretched to its full source height. */
+img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; }
 
 h1, h2, h3 {
@@ -185,7 +188,7 @@ h1, h2, h3 {
    are a different aspect ratio than the raw screenshots. */
 .showcase { margin: 52px auto 0; max-width: 1000px; }
 
-.hero-art { width: 100%; height: auto; }
+.hero-art { width: 100%; }
 
 /* ---------------------------------------------------------------- sections */
 
